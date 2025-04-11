@@ -25,6 +25,10 @@ struct MealTrackingView: View {
                 
                 Divider()
                 
+                Text(viewModel.currentDay.date.formatted(date: .complete, time: .omitted))
+                    .font(.title2)
+                    .bold()
+                
                 List($viewModel.currentDay.feedings) { $currentFeeding in
                     
                     HStack(alignment: .top) {
@@ -42,7 +46,7 @@ struct MealTrackingView: View {
                     
                 }
                 .listStyle(.plain)
-                .navigationTitle("Bone Appétit")
+                .navigationTitle("Bone Appétit 🦴")
 
             }
             .padding(.horizontal)
