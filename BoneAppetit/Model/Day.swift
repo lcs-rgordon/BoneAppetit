@@ -7,8 +7,7 @@
 
 import Foundation
 
-@Observable
-class Day: Identifiable {
+struct Day: Identifiable {
     
     // MARK: Stored properties
     
@@ -19,7 +18,7 @@ class Day: Identifiable {
     let date: Date
     
     // The list of anticipated feedings for this day
-    let feedings: [Feeding]
+    var feedings: [Feeding]
     
     // MARK: Initializer(s)
     
@@ -27,11 +26,30 @@ class Day: Identifiable {
     //
     // NOTE: "date" parameter defaults to the current day.
     init(
-        date: Date = Date(),
-        feedings: [Feeding]
+        date: Date = Date()
     ) {
         self.date = date
-        self.feedings = feedings
+        
+        // To start, this is hard-coded to be the feeding schedule for my dog, Piper
+        //
+        // NOTE: Used this page as a reference:
+        //
+        // https://www.hackingwithswift.com/books/ios-swiftui/working-with-dates
+        self.feedings = [
+            
+            // 7 AM
+            Feeding(hour: Calendar.current.date(from: DateComponents(hour: 7)) ?? .now),
+
+            // 11 AM
+            Feeding(hour: Calendar.current.date(from: DateComponents(hour: 11)) ?? .now),
+
+            // 3 PM
+            Feeding(hour: Calendar.current.date(from: DateComponents(hour: 15)) ?? .now),
+
+            // 7 PM
+            Feeding(hour: Calendar.current.date(from: DateComponents(hour: 19)) ?? .now),
+
+        ]
     }
     
 }

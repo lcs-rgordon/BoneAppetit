@@ -7,8 +7,7 @@
 
 import Foundation
 
-@Observable
-class Feeding: Identifiable {
+struct Feeding: Identifiable {
     
     // MARK: Stored properties
     

@@ -13,6 +13,7 @@
 		811D6E4F2DA9992300463824 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 811D6E482DA9992300463824 /* Assets.xcassets */; };
 		811D6E532DA99A1400463824 /* Feeding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811D6E522DA99A0D00463824 /* Feeding.swift */; };
 		811D6E552DA99AF500463824 /* Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811D6E542DA99AF300463824 /* Day.swift */; };
+		811D6E582DA99EEE00463824 /* MealTrackingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811D6E572DA99EEA00463824 /* MealTrackingViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		811D6E4A2DA9992300463824 /* MealTrackingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealTrackingView.swift; sourceTree = "<group>"; };
 		811D6E522DA99A0D00463824 /* Feeding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feeding.swift; sourceTree = "<group>"; };
 		811D6E542DA99AF300463824 /* Day.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day.swift; sourceTree = "<group>"; };
+		811D6E572DA99EEA00463824 /* MealTrackingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealTrackingViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 			children = (
 				811D6E492DA9992300463824 /* BoneAppetitApp.swift */,
 				811D6E512DA999FC00463824 /* Model */,
+				811D6E562DA99E7800463824 /* ViewModels */,
 				811D6E502DA9994200463824 /* Views */,
 				811D6E472DA9992300463824 /* Preview Content */,
 				811D6E482DA9992300463824 /* Assets.xcassets */,
@@ -87,6 +90,14 @@
 				811D6E542DA99AF300463824 /* Day.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		811D6E562DA99E7800463824 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				811D6E572DA99EEA00463824 /* MealTrackingViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,6 +175,7 @@
 			files = (
 				811D6E532DA99A1400463824 /* Feeding.swift in Sources */,
 				811D6E4C2DA9992300463824 /* BoneAppetitApp.swift in Sources */,
+				811D6E582DA99EEE00463824 /* MealTrackingViewModel.swift in Sources */,
 				811D6E552DA99AF500463824 /* Day.swift in Sources */,
 				811D6E4D2DA9992300463824 /* MealTrackingView.swift in Sources */,
 			);
