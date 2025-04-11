@@ -8,14 +8,24 @@
 import SwiftUI
 
 struct MealTrackingView: View {
+    
+    // MARK: Stored properties
+    
+    
+    // MARK: Computed properties
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationStack {
+
+            VStack {
+                Image(systemName: "globe")
+                    .imageScale(.large)
+                    .foregroundStyle(.tint)
+                Text("Hello, world!")
+            }
+            .padding()
+            .navigationTitle("Bone Appétit")
+
         }
-        .padding()
     }
 }
 
