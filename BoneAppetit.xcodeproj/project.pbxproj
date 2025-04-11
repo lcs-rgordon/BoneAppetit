@@ -6,17 +6,20 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		811D6E4C2DA9992300463824 /* BoneAppetitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811D6E492DA9992300463824 /* BoneAppetitApp.swift */; };
+		811D6E4D2DA9992300463824 /* MealTrackingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811D6E4A2DA9992300463824 /* MealTrackingView.swift */; };
+		811D6E4E2DA9992300463824 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 811D6E462DA9992300463824 /* Preview Assets.xcassets */; };
+		811D6E4F2DA9992300463824 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 811D6E482DA9992300463824 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		811D6E352DA998FC00463824 /* BoneAppetit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BoneAppetit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		811D6E462DA9992300463824 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		811D6E482DA9992300463824 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		811D6E492DA9992300463824 /* BoneAppetitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoneAppetitApp.swift; sourceTree = "<group>"; };
+		811D6E4A2DA9992300463824 /* MealTrackingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealTrackingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		811D6E372DA998FC00463824 /* BoneAppetit */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = BoneAppetit;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		811D6E322DA998FC00463824 /* Frameworks */ = {
@@ -32,7 +35,7 @@
 		811D6E2C2DA998FC00463824 = {
 			isa = PBXGroup;
 			children = (
-				811D6E372DA998FC00463824 /* BoneAppetit */,
+				811D6E4B2DA9992300463824 /* BoneAppetit */,
 				811D6E362DA998FC00463824 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +46,33 @@
 				811D6E352DA998FC00463824 /* BoneAppetit.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		811D6E472DA9992300463824 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				811D6E462DA9992300463824 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		811D6E4B2DA9992300463824 /* BoneAppetit */ = {
+			isa = PBXGroup;
+			children = (
+				811D6E492DA9992300463824 /* BoneAppetitApp.swift */,
+				811D6E502DA9994200463824 /* Views */,
+				811D6E472DA9992300463824 /* Preview Content */,
+				811D6E482DA9992300463824 /* Assets.xcassets */,
+			);
+			path = BoneAppetit;
+			sourceTree = "<group>";
+		};
+		811D6E502DA9994200463824 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				811D6E4A2DA9992300463824 /* MealTrackingView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -59,9 +89,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				811D6E372DA998FC00463824 /* BoneAppetit */,
 			);
 			name = BoneAppetit;
 			packageProductDependencies = (
@@ -109,6 +136,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				811D6E4E2DA9992300463824 /* Preview Assets.xcassets in Resources */,
+				811D6E4F2DA9992300463824 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +148,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				811D6E4C2DA9992300463824 /* BoneAppetitApp.swift in Sources */,
+				811D6E4D2DA9992300463824 /* MealTrackingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

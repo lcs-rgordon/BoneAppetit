@@ -11,7 +11,7 @@ import SwiftUI
 struct BoneAppetitApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MealTrackingView()
         }
     }
 }
